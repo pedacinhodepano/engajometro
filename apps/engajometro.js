@@ -119,7 +119,7 @@ function engajometro() {
                      </div>
                      <hr>
                      <h5>Orientações:</h5>
-                     <p><strong>As taxas menores que 1% são consideradas ruins 😰</strong>  em outras palavras, seu conteúdo não vai ser entregue para mais pessoas de maneira orgânica pelo algoritmo📱.</p>
+                     <p><strong>As taxas menores que 1% são consideradas ruins 😰,</strong>  em outras palavras, seu conteúdo não vai ser entregue para mais pessoas de maneira orgânica pelo algoritmo📱.</p>
                      <p>Isso acontece devido a forma como o conteúdo foi criado, e para resolver esse problema e se tornar relevante é necessário entender como funcionam as regras desse jogo, basicamente seu conteúdo tem que ser capaz de manter as pessoas dentro da rede social, existem vários métodos que se seguido vão fazer seus conteúdos ter mais engajamento.📊</p>
                      <p>Não desista dessa jornada, pois o criador de conteúdo de sucesso de hoje foi iniciante no passado⛹️‍♀️.</p>
                      <small><strong>Nós do Pedacinho de Pano usamos como base o número de pessoas alcançadas pela publicação, muitos lugares por aí usam uma fórmula para calcular a taxa de engajamento baseado no número dos seguidores e isso torna o cálculo menos próximo da realidade.</strong></small>
