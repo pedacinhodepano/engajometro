@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Compatibilidade HTML5 IE -->
+	<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<![endif]-->
+
+	<title>Engajometro</title>
+
+	<!-- Bootstrap Offgrid -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+	<!-- Ionic CSS Offgrid -->
+	<link href="assets/iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
+
+	<!-- FontAwesome Offgrid-->
+	<link href="assets/fontawesome/css/all.css" rel="stylesheet">
+
+   <!-- Recursos externos -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+
+	<!-- Estilo customizado -->
+	<link rel="stylesheet" type="text/css" href="assets/css/estilo.css">
+
+	<link rel="icon"  href="assets/img/favicon.png">
+</head>
+
+<body>
+	<div id="header"></div>
+	<section class="caixa"><!--Inicio seção saiba  -->
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+				<div class="jumbotron">
+					<div class="align-self-center">
+						<h2>Taxa de Engajamento</h2>
+						<form id="engagementForm">
+						  <div class="form-row">
+							  <div class="form-group col-md-5">
+								  <label class="sr-only" for="like">Curtidas:</label>
+								  <div class="input-group mb-2">
+									  <div class="input-group-prepend">
+										  <div class="input-group-text"><i class="fa-solid fa-heart"></i></div>
+										</div>
+										<input type="number" class="form-control form-control-lg" id="like" placeholder="Curtidas:" required>
+									</div>
+								</div>
+								
+								<div class="form-group col-md-7">
+									<label class="sr-only" for="comments">Comentários:</label>
+									<div class="input-group mb-2">
+										<div class="input-group-prepend">
+											<div class="input-group-text"><i class="fa-solid fa-comment"></i></div>
+										</div>
+										<input type="number" class="form-control form-control-lg" id="comments" placeholder="Comentários:" required>
+									</div>
+								</div>
+						  </div>
+                          <div class="form-row">
+							<div class="form-group col-md-6">
+								<label class="sr-only" for="saved">Salvos:</label>
+								<div class="input-group mb-2">
+									<div class="input-group-prepend">
+										<div class="input-group-text"><i class="fa-solid fa-bookmark"></i> </div>
+									</div>
+									<input type="number" class="form-control form-control-lg" id="saved" placeholder="Salvos:" required>
+								</div>
+							</div>
+							<div class="form-group col-md-6">
+								<label class="sr-only" for="send">Envios:</label>
+								<div class="input-group mb-2">
+									<div class="input-group-prepend">
+										<div class="input-group-text"><i class="fa-solid fa-location-arrow"></i></div>
+									</div>
+									<input type="number" class="form-control form-control-lg" id="send" placeholder="Envios:" required>
+								</div>
+							</div>	
+						  </div>
+								
+							  <label class="sr-only" for="peopleReached">Pessoas Alcançadas:</label>
+							  <div class="input-group mb-2">
+								<div class="input-group-prepend">
+								<div class="input-group-text"><i class="fa-solid fa-user"></i></div>
+								</div>
+								<input type="number" class="form-control form-control-lg" id="peopleReached" placeholder="Pessoas Alcançadas:" required>
+							  </div>
+							
+							<button type="button" class="btn btn-primary" onclick="engajometro()">Calcular</button>
+						</form>
+					</div>
+				</div>
+				</div>
+				<div class="col-md-6">
+					<div class="jumbotron" id="resultado"></div>
+				</div>
+			</div>
+		</div>
+	</section><!-- Fim seção saiba -->
+
+    <div id="footer"></div>
+
+	<!-- JavaScript -->
+	<script src="../config.js"></script>
+	<script>
+        BASE_PATH = '../';
+		PAGE = true;
+    </script>
+	<script src="../main.js"></script>
+	<script src="../apps/engajometro.js"></script>
+
+	<!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+</body>
+</html>
+
