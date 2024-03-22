@@ -1,6 +1,8 @@
 // Função para carregar e exibir o conteúdo de uma página
 function loadContent(elementId, url) {
-   
+   console.log("[loaded] - Main");
+   console.log("Debug");
+   console.log(`${BASE_PATH}${url}`);
     fetch(`${BASE_PATH}${url}`)
       .then(response => response.text())
       .then(data => {
