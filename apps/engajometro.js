@@ -1,13 +1,13 @@
 function engajometro() {
-    const like = document.getElementById('like').value ? parseInt(document.getElementById('like').value) : false;
+    const like = document.getElementById('like').value ? parseInt(document.getElementById('like').value) : "no";
     const fieldLike = document.getElementById('like');
-    const comments = document.getElementById('comments').value ? parseInt(document.getElementById('comments').value) : false;
+    const comments = document.getElementById('comments').value ? parseInt(document.getElementById('comments').value) : "no";
     const fieldComments = document.getElementById('comments');
-    const send = document.getElementById('send').value ? parseInt(document.getElementById('send').value) : false ;
+    const send = document.getElementById('send').value ? parseInt(document.getElementById('send').value) : "no" ;
     const fieldsend = document.getElementById('send');
-    const saved = document.getElementById('saved').value ? parseInt(document.getElementById('saved').value) : false;
+    const saved = document.getElementById('saved').value ? parseInt(document.getElementById('saved').value) : "no";
     const fieldSaved = document.getElementById('saved');
-    const peopleReached = document.getElementById('peopleReached').value ? parseInt(document.getElementById('peopleReached').value) : false; 
+    const peopleReached = document.getElementById('peopleReached').value ? parseInt(document.getElementById('peopleReached').value) : "no"; 
     const fieldPeopleReached = document.getElementById('peopleReached');
 
     const errorMessages = [];
@@ -33,29 +33,28 @@ function engajometro() {
         removeErrorHighlight(fieldPeopleReached);
     }clearErrors()
 
-    if (!like || like == false || isNaN(like) || typeof like === 'string') {
+    if (like == "no" || isNaN(like) || typeof like === 'string') {
         addError("Curtidas", "Por favor, preencha este campo de forma correta, somente numeros!");
         highlightErrorField(fieldLike);
     } else {
         removeErrorHighlight(fieldLike);
     }
 
-
-    if (!comments || comments == false || isNaN(comments) || typeof comments === 'string') {
+    if (comments == "no" || isNaN(comments) || typeof comments === 'string') {
         addError("Cometários", "Por favor, preencha este campo de forma correta, somente numeros!");
         highlightErrorField(fieldComments);
     } else {
         removeErrorHighlight(fieldComments);
     }
 
-    if (!send || send == false || isNaN(send) || typeof send === 'string') {
+    if (send == "no" || isNaN(send) || typeof send === 'string') {
         addError("Enviu", "Por favor, preencha este campo de forma correta, somente numeros!");
         highlightErrorField(fieldsend);
     } else {
         removeErrorHighlight(fieldsend);
     }
    
-    if (!saved || saved == false || isNaN(saved) || typeof saved === 'string') {
+    if (saved == "no" || isNaN(saved) || typeof saved === 'string') {
         addError("Salvos", "Por favor, preencha este campo de forma correta, somente numeros!");
         highlightErrorField(fieldSaved);
     } else {
@@ -63,13 +62,13 @@ function engajometro() {
     }
 
 
-    if (!peopleReached || peopleReached == false || isNaN(peopleReached) || typeof peopleReached === 'string') {
+    if (peopleReached == "no" || isNaN(peopleReached) || typeof peopleReached === 'string') {
         addError("Pessoas Alcançadas", "Por favor, preencha este campo de forma correta, somente numeros!");
         highlightErrorField(fieldPeopleReached);
     } else {
         removeErrorHighlight(fieldPeopleReached);
     }
-
+  
     if (peopleReached == 0) {
         addError("Pessoas Alcançadas", "Por favor, preencha este campo com numero maior que 0");
         highlightErrorField(fieldPeopleReached);
