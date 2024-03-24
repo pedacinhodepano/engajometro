@@ -104,7 +104,7 @@ function engajometro() {
     if (result >= 1 && result <= 5.99) {
         var text = `<div class="d-flex align-items-center p-4" style="background:grey">
                         <h2 class="p-0 mt-2 mr-2" style="color:white">Resultado:</h2>
-                        <h1 class="p-0 m-0" style="text-align:center"><strong id="resultValue" style="color:white">${result.replace('.',',')}%</strong> 🤯</h1>
+                        <h1 class="p-0 m-0" style="text-align:center"><strong id="resultValue" style="color:white; font-size: 8vw;">${result.replace('.',',')}%</strong> 🤯</h1>
                     </div>
                     <hr>
                     <h5>Orientações:</h5>
@@ -116,7 +116,7 @@ function engajometro() {
     } else if (result > 5.99) {
         var text = `<div class="d-flex align-items-center p-4" style="background:grey">
                         <h2 class="p-0 mt-2 mr-2" style="color:white">Resultado:</h2>
-                        <h1 class="p-0 m-0" style="text-align:center"><strong id="resultValue" style="color:white">${result.replace('.',',')}%</strong> 🚀</h1>
+                        <h1 class="p-0 m-0" style="text-align:center"><strong id="resultValue" style="color:white; font-size: 8vw;">${result.replace('.',',')}%</strong> 🚀</h1>
                     </div>
                     <hr>
                     <h5>Orientações:</h5>
@@ -128,7 +128,7 @@ function engajometro() {
     } else {
         var text = `<div class="d-flex align-items-center p-4" style="background:grey">
                          <h2 class="p-0 mt-2 mr-2" style="color:white">Resultado:</h2>
-                         <h1 class="p-0 m-0" style="text-align:center"><strong id="resultValue" style="color:white">${result.replace('.',',')}%</strong> 😭</h1>
+                         <h1 class="p-0 m-0" style="text-align:center"><strong id="resultValue" style="color:white; font-size: 8vw;">${result.replace('.',',')}%</strong> 😭</h1>
                      </div>
                      <hr>
                      <h5>Orientações:</h5>
