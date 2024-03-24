@@ -40,6 +40,13 @@ function engajometro() {
         removeErrorHighlight(fieldLike);
     }
 
+    if (like > peopleReached) {
+        addError("Curtidas", "Por favor, este campo não pode ser maior que o campo de Pessoas Alcançadas!");
+        highlightErrorField(fieldLike);
+    } else {
+        removeErrorHighlight(fieldLike);
+    }
+
     if (comments == "no" || isNaN(comments) || typeof comments === 'string') {
         addError("Cometários", "Por favor, preencha este campo de forma correta, somente numeros!");
         highlightErrorField(fieldComments);
@@ -56,6 +63,13 @@ function engajometro() {
    
     if (saved == "no" || isNaN(saved) || typeof saved === 'string') {
         addError("Salvos", "Por favor, preencha este campo de forma correta, somente numeros!");
+        highlightErrorField(fieldSaved);
+    } else {
+        removeErrorHighlight(fieldSaved);
+    }
+
+    if (saved > peopleReached) {
+        addError("Salvos", "Por favor, este campo não pode ser maior que o campo de Pessoas Alcançadas!");
         highlightErrorField(fieldSaved);
     } else {
         removeErrorHighlight(fieldSaved);
